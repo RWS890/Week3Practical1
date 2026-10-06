@@ -42,25 +42,29 @@ namespace StudentLibrary1
         {
             Name = "John Doe";
             Age = 16;
+            id = studentCount++;
             
         }
 
         public Student(string Name, int Age)
         { 
-        
+        this.name = Name;
+        this.age = Age;
+        id = studentCount++;
         }
 
         public void Display()
         {
             Console.WriteLine($"Student ID: {Id}");
-            Console.WriteLine("Student's name: {Name}");
-            Console.WriteLine("Student's age: {Age}");
+            Console.WriteLine($"Student's name: {Name}");
+            Console.WriteLine($"Student's age: {Age}");
 
         }
 
         public static void GetOlder()
         {
             
+            //return ++age;
         }
         
     }
