@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Cache;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace StudentLibrary1
@@ -36,5 +38,31 @@ namespace StudentLibrary1
         {
             get { return studentCount; }
         }
+        public Student()
+        {
+            Name = "John Doe";
+            Age = 16;
+            
+        }
+
+        public Student(string Name, int Age)
+        { 
+        
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Student ID: {Id}");
+            Console.WriteLine("Student's name: {Name}");
+            Console.WriteLine("Student's age: {Age}");
+
+        }
+
+        public static void GetOlder()
+        {
+            
+        }
+        
     }
+   
 }
